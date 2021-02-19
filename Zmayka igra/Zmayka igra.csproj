@@ -43,9 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="point.cs" />
+    <Compile Include="DN1.cs" />
+    <Compile Include="Fe.cs" />
+    <Compile Include="HL.cs" />
+    <Compile Include="PO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
+    <Compile Include="VL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

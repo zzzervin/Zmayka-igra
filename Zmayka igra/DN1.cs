@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zmayka_igra
 {
-    class point
+    enum DN1
     {
-        public int x;
-        public int y;
-        public char sum;
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
     }
 }

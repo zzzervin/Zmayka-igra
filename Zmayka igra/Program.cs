@@ -10,28 +10,48 @@ namespace Zmayka_igra
     {
         static void Main(string[] args)
         {
-            int x1 = 1;
-            int y1=3;
-            char sum1 = '*';
+            PO p = new PO(1,3,'@');
+            Snake snake = new Snake( p, 4, DN1.RIGHT);
+          
 
-            Draw(x1, y1, sum1);
+            PO p2 = new PO(4,5,'#');
+            p2.Draw();
 
-            int x2 = 4;
-            int y2 = 5;
-            char sum2 = '#';
+            HL rughtline = new HL(0,78,0,'+');
+            HL leftline = new HL(0,78,24, '+');
+            VL upline = new VL(0,24 ,0 , '+');
+            VL downline = new VL(0, 24, 78, '+');
+            rughtline.Drow();
+            leftline.Drow();
+            upline.Drow();
+            downline.Drow();
 
-            Draw(x2, y2, sum2);
+
+
+            //List<int> numList = new List<int>();
+            //numList.Add(0);
+            //numList.Add(1);
+            //numList.Add(2);
+
+            //int x  = numList[0];
+            //int y = numList[1];
+            //int z = numList[2];
+
+            //foreach (int i in numList)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //numList.RemoveAt(0);
+
+            //List<PO> pList = new List<PO>();
+            //pList.Add(p1);
+            //pList.Add(p2);
 
             Console.ReadLine();
         }
         
-        static void Draw(int x,int y,char sum)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sum);
-
-
-        }
+     
 
 
     }
