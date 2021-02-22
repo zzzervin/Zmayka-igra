@@ -27,6 +27,8 @@ namespace Zmayka_igra
             sum = p.sum;
         }
 
+       
+
         public void Move(int offset, DN1 direction)
         { 
             if(direction==DN1.RIGHT)

@@ -13,7 +13,7 @@ namespace Zmayka_igra
             pList = new List<PO>();
             for (int i = 0; i < lenght ; i++)
             {
-                PO p = new PO(tail);
+                PO p = new PO(tail);//\\(ConsoleColor.Red)
                 p.Move(i, direction);
                 pList.Add(p);
             }
